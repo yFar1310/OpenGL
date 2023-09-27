@@ -15,7 +15,6 @@
 #include <cstdlib>
 #include <string>
 
-
 // Déclaration de cubeActif comme variable globale
 bool cubeActif = true; // Par défaut, le cube est actif
 
