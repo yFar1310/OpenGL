@@ -431,6 +431,7 @@ void mousemotion(int x,int y)
       glutPostRedisplay(); /* on demande un rafraichissement de l'affichage */
     }
 
+	  
     xold=x; /* sauvegarde des valeurs courante de le position de la souris */
     yold=y;
   }
