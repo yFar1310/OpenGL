@@ -357,6 +357,7 @@ void clavier(unsigned char touche, int x, int y)
     }
 }
 
+
 /* void clavierIcosa(unsigned char touche, int x, int y)
 {
     switch (touche)
