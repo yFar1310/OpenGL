@@ -1,10 +1,12 @@
 /********************************************************/
-/*                     cube.cpp                                                 */
+/*                     cube2.cpp                                                 */
 /********************************************************/
 /*                Affiche a l'ecran un cube en 3D                      */
 /********************************************************/
 
+
 /* inclusion des fichiers d'en-tete freeglut */
+
 
 #ifdef __APPLE__
 #include <GLUT/glut.h> /* Pour Mac OS X */

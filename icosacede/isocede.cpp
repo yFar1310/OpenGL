@@ -15,7 +15,6 @@
 #include <cstdlib>
 #include <string>
 
-
 // Déclaration de cubeActif comme variable globale
 bool cubeActif = true; // Par défaut, le cube est actif
 
@@ -358,6 +357,7 @@ void clavier(unsigned char touche, int x, int y)
     }
 }
 
+
 /* void clavierIcosa(unsigned char touche, int x, int y)
 {
     switch (touche)
@@ -431,6 +431,7 @@ void mousemotion(int x,int y)
       glutPostRedisplay(); /* on demande un rafraichissement de l'affichage */
     }
 
+	  
     xold=x; /* sauvegarde des valeurs courante de le position de la souris */
     yold=y;
   }
