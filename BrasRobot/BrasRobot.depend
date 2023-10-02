@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1696177964 source:/home/yfar/Downloads/cube(1).cpp
+	<GLUT/glut.h>
+	<GL/glut.h>
+	<cstdlib>
+
+1696253353 source:/home/yfar/Downloads/BrasRobot.cpp
+	<GLUT/glut.h>
+	<GL/glut.h>
+	<cstdlib>
+
