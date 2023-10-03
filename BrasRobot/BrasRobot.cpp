@@ -78,6 +78,7 @@ void socle()
 void rotule1()
 {
    glPushMatrix();
+     glColor3f(0.3,0.4,0.8);
      glTranslatef(0,(0.1625),0);// y=r+(y(socle)/2)
      glutSolidSphere((0.1),16,16);
    glPopMatrix();
@@ -85,6 +86,7 @@ void rotule1()
 void bras()
 {
    glPushMatrix();
+     glColor3f(0.9,0.5,0.2);
      glTranslatef(0,0,0);
      glRotatef(-90,1,0,0);
      glTranslatef(0,0,(0.2625));
@@ -95,6 +97,7 @@ void bras()
 void rotule2()
 {
  glPushMatrix();
+     glColor3f(0.3,0.4,0.8);
      glTranslatef(0,  ((2*0.1)+(0.0625)+0.5+0.1),0);// y=2*r+(y(socle)/2)+cylindreHeight//+r
      glutSolidSphere((0.1),16,16);
    glPopMatrix();
@@ -102,6 +105,7 @@ void rotule2()
 void avantBras()
 {
 glPushMatrix();
+     glColor3f(0,1,1);
      glTranslatef(0,0,0);
      glRotatef(-90,1,0,0);
      glTranslatef(0,0,0.1+((2*0.1)+(0.0625)+0.5+0.1)); //r + (2*r+(y(socle)/2)+cylindreHeight//+r)
@@ -113,16 +117,19 @@ glPushMatrix();
 void pince()
 {
    glPushMatrix();
+     glColor3f(0,1,0);
      glTranslatef(0,0.1+((2*0.1)+(0.0625)+0.5+0.1)+0.5+(0.125)/4,0);
      glScalef((0.3),(0.125)/2,(0.1));
      glutSolidCube(1);
    glPopMatrix();
    glPushMatrix();
+      glColor3f(1,1,0);
       glTranslatef(-(0.3)/2 + 0.06/2,(0.125)/4+(0.3/2)+0.1+((2*0.1)+(0.0625)+0.5+0.1)+0.5+(0.125)/4,0);
       glScalef(0.06,0.3,(0.1));
       glutSolidCube(1);
    glPopMatrix();
    glPushMatrix();
+      glColor3f(1,0,0);
       glTranslatef((0.3)/2 - 0.06/2,(0.125)/4+(0.3/2)+0.1+((2*0.1)+(0.0625)+0.5+0.1)+0.5+(0.125)/4,0);
       glScalef(0.06,0.3,(0.1));
       glutSolidCube(1);
@@ -131,12 +138,8 @@ void pince()
 
 void idle()
 {
-
-
               angle++;
               glutPostRedisplay();
-
-
 }
 
 void affichage()
@@ -157,10 +160,13 @@ void affichage()
   bras();
   rotule2();
   //glRotatef(angle,0,1,0);
-  glTranslatef(0,0,0);
+  glPushMatrix();
+  glTranslatef(0,(0.1+((2*0.1)+(0.0625)+0.5+0.1))-0.1,0);
   glRotatef(angle1,1,0,0);
+  glTranslatef(0,-(0.1+((2*0.1)+(0.0625)+0.5+0.1))+0.1,0);
   avantBras();
   pince();
+  glPopMatrix();
 
 
    // Dessin du cube
@@ -232,9 +238,16 @@ void clavier(unsigned char touche,int x,int y)
       glPolygonMode(GL_FRONT,GL_LINE);
       glutPostRedisplay();
     case 'R':
-       if(angle1>=0 & angle1<=90){
+       if(angle1<=90){
        angle1++;
        glutPostRedisplay();
+       }
+       break;
+    case 'r':
+       if(angle1>=-90)
+       {
+        angle1--;
+        glutPostOverlayRedisplay();
        }
     break;
     case 'q' : /*la touche 'q' permet de quitter le programme */
