@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1696856146 source:/home/yfar/Downloads/jpegtex.cpp
+	<cstdio>
+	<iostream>
+	<cstdlib>
+	<cmath>
+	<GL/freeglut.h>
+	<jpeglib.h>
+	<jerror.h>
+
