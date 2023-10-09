@@ -43,7 +43,7 @@ void loadJpegImage(char *fichier);
 
 int main(int argc,char **argv)
 {
-
+  /*appel de la fonction loadJpegImage*/
   loadJpegImage("./calimero.jpg");
   /* Creation de la fenetre OpenGL */
   glutInit(&argc,argv);
