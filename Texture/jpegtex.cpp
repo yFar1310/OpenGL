@@ -108,7 +108,7 @@ for(int i=0; i<n; i++)
 }
 for(int i=0; i<n;i++)
 {
-    double v1,v2;
+    //double v1,v2;
     //v1=(0.5*i)/n; on ajoute v1 pour gérer le point issu du découpage 
     //v2=(0.5*(i+1))/n; on ajoute v2 pour gérer le point symétriquede v1 issu du découpage 
     glBegin(GL_POLYGON);
