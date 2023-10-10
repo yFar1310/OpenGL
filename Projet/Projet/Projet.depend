@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1696965360 source:/home/yfar/Downloads/cube.cpp
+	<GLUT/glut.h>
+	<GL/glut.h>
+	<cstdlib>
+	<string>
+	<cmath>
+
