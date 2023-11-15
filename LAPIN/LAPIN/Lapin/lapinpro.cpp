@@ -1,7 +1,7 @@
 /********************************************************/
-/*                     cube.cpp                                                 */
+/*                     lapinpro.cpp                                                 */
 /********************************************************/
-/*                Affiche a l'ecran un cube en 3D                      */
+/*                Affiche a l'ecran un lapin en 3D                      */
 /********************************************************/
 
 /* inclusion des fichiers d'en-tete freeglut */
